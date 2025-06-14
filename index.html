@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+     
+    <style>
+
+        body{
+            background-image: url(data:image/jpeg;base64,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);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:cover;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+            background-color:grey;
+        }
+        form{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7DdQbYovLp-3RAyfv7lZZ--BlZhXckeOazm4mHNLaPJnqSHi4M6UlhGIwVlF124VYzwI&usqp=CAU);
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 6px;
+           
+        }    
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label{
+            display: block;
+            margin: 12px 0 6px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="city"],
+        input[type="state"],
+        input[type="bio"],
+        button,
+        select,textarea
+             {
+                width:100%;
+                padding: 8px;
+                box-sizing: border-box;
+                border-radius: 4px;
+                border: 1px solid black;
+
+             }
+         textarea{
+            resize: vertical;
+            height: 80px;
+             }
+        button[type="reset"],
+        input[type="submit"]{
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="reset"]:hover,
+        input[type="submit"]:hover{
+        background-color: #0056b3;
+      }
+    </style>
+</head>
+<body>
+    <form action="/upload" method="post">
+      <h2>Registration Form</h2><br><br>
+       
+      <label for="Full Name">Full Name:</label>
+      <input type="text" placeholder="Please enter your full name"  required/>
+
+      <label for="father name ">Father Name:</label>
+      <input type="text" placeholder="Please Enter your Father Name "  required/>
+
+      <label for="mother name"> Mother Name:</label>
+      <input type="text" placeholder="Please Enter your mother name" required/>
+
+      <label for="email">Email ID:</label>
+      <input type="email" placeholder="Example@mail.com" required/>
+
+     <label for="gender">Gender:</label>
+     <select name="gender" id="gender">
+        <option value="disable selected">select your gender</option>
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+        <option value="Other">Other</option>
+     </select>
+
+     <label for="cast">Cast:</label>
+     <select name="cast" id="cast">
+        <option value="disable select">select your cast</option>
+        <option value="general">General</option>
+        <option value="obc">OBC</option>
+        <option value="sc">SC</option>
+        <option value="st">ST</option>
+     </select>
+
+        <label for="age">Age:</label>
+        <input type="number" placeholder="enter your age" min="18" max="60"/>
+
+        <label  for="address"> Address:</label>
+        <input  type="text" placeholder=" Enter your permanent address" required/>
+        
+        <label for="religion">Religion:</label>
+        <select name="religin" id="religion">
+            <option value="disable select">select your religion</option>
+            <option value="hindu">Hindu</option>
+            <option value="christian">Christian</option>
+            <option value="muslim">Muslim</option>
+        </select>
+
+        <label  for="City">City:</label>
+        <input type="city" placeholder="Moirang">
+
+        <label  for="pin code">Pin Code:</label>
+        <input  type="number" placeholder="795133">
+
+        <label for="state">State:</label>
+        <input type="state" placeholder="Manipur">
+
+        <labelfor="Country">Country:</label>
+         <select name="country" id="country">
+            <option value="disable select">select country</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="china">China</option>
+            <option value="japan">Japan</option>
+            <option value="England">England</option>
+         </select>
+
+        <label for="bio">Bio</label>
+        <textarea name="textarea" id="bio" placeholder="Tell us something about yourself!"></textarea><br><br>
+
+        <input type="submit" value="Register">
+        <button type="reset">Reset Form</button>
+     </form>
+    
+</body>
+</html>
